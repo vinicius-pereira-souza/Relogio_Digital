@@ -32,7 +32,7 @@ function handleBackGround(hour) {
   } else if (hour > 13 && hour < 17){
     bg.classList.remove(bg.classList[1])
     bg.classList.add('afternoon')
-  } else if (hour > 17){
+  } else if (hour > 17 && hour == 00){
     bg.classList.remove(bg.classList[1])
     bg.classList.add('night')
   }
